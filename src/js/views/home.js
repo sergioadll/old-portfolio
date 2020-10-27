@@ -1,10 +1,11 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
+import { About } from "../component/about.js";
+import { Projects } from "../component/projects.js";
+import { Navbar } from "../component/navbar.js";
 
 export const Home = () => (
-	<div className="d-flex">
-		<div className="col-3">ok check</div>
-		<div className="col-9">it out</div>
-	</div>
+	<>
+		<div className="content text-white">Sometchinasd</div>
+	</>
 );

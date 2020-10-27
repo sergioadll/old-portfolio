@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
 import injectContext from "./store/appContext";
+
+import { Home } from "./views/home";
+import { About } from "./component/about";
+import { Projects } from "./component/projects";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -17,27 +18,23 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div className="d-flex flex-column h-100">
-			<BrowserRouter basename={basename}>
-				<ScrollToTop>
+		<div className="h-100">
+			<Router>
+				<div className="d-flex h-100">
 					<Navbar />
+
 					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
-						</Route>
-						<Route>
-							<h1>Not found!</h1>
+						<Route path="/" exact>
+							<About />
 						</Route>
 					</Switch>
-					<Footer />
-				</ScrollToTop>
-			</BrowserRouter>
+					<Switch>
+						<Route path="/projects">
+							<Projects />
+						</Route>
+					</Switch>
+				</div>
+			</Router>
 		</div>
 	);
 };
