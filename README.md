@@ -88,7 +88,7 @@ Deploy:
 $ vercel --prod
 ```
 ✎ Note: If you don't have an account just go to vercel.com, create a account and come back here.
-
+no
 ![Vercel example procedure to deploy](https://github.com/4GeeksAcademy/react-hello-webapp/blob/4b530ba091a981d3916cc6e960e370decaf2e234/docs/deploy.png?raw=true)
 
 2. **Github Pages:** This boilerplate is 100% compatible with the free github pages hosting.
