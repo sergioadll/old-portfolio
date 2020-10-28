@@ -17,17 +17,16 @@ import "../../styles/navbar.scss";
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
 	const [light, setLight] = useState(true);
+	const [color, setColor] = useState(true);
+
 	//arreglar
-	const color = light => {
-		console.log(light);
+	function handleColor() {
 		if (light) {
-			return "yellow";
-			console.log("white");
+			setColor("yellow");
 		} else {
-			console.log("white");
-			return "black";
+			setColor("black");
 		}
-	};
+	}
 	return (
 		<div className="navbar d-flex flex-column justify-content-start p-0 border-right border-secondary">
 			<Link to="/" className="name p-3">
@@ -49,6 +48,7 @@ export const Navbar = () => {
 				size="30"
 				onClick={() => {
 					setLight(!light);
+					handleColor();
 					//console.log("click", light);
 					actions.changeTheme(light);
 				}}
