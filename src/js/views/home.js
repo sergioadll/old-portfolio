@@ -25,15 +25,25 @@ export const Home = () => {
 	);
 	return (
 		<>
-			<div id="theme" className="section d-flex flex-column justify-content-center align-items-center">
-				<span className="home-title ">SERGIO DIAZ LLOBERA</span>
-				<img className="profile-image mb-2" src={sergioDiaz} alt="Sergio Diaz Llobera" />
-				<p className="home-content text-justify ">
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-					dicta sunt explicabo.
-				</p>
+			<div id="theme" className="section d-flex justify-content-center align-items-center">
+				<span className="home-title ">SDL</span>
+				<div className="image-container d-flex justify-content-center align-items-center">
+					<img className="profile-image mb-2" src={sergioDiaz} alt="Sergio Diaz Llobera" />
+				</div>
+				<div>
+					<p className="home-content ">Desarrollador Full-Stack. </p>
+					<p className="home-content ">Apasionado por los negocios y la tecnología.</p>
+					<p className="home-content ">Siempre en continua renovación.</p>
+				</div>
 			</div>
 		</>
 	);
 };
+/*
+			<div id="theme" className="section d-flex flex-column justify-content-center align-items-center">
+				<span className="home-title ">SERGIO DIAZ LLOBERA</span>
+				<img className="profile-image mb-2" src={sergioDiaz} alt="Sergio Diaz Llobera" />
+				<p className="home-content ">Desarrollador Full-Stack, apasionado por los negocios.</p>
+				<p className="home-content ">Siempre en continua renovación</p>
+			</div>
+            */

@@ -10,21 +10,19 @@ import { AiOutlineUser } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
 import { GoLightBulb } from "react-icons/go";
 
-import sergioDiaz from "../../img/sergioDiaz.jpg";
-
 import "../../styles/navbar.scss";
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
 	const [light, setLight] = useState(true);
-	const [color, setColor] = useState(true);
+	const [color, setColor] = useState("grey");
 
 	//arreglar
 	function handleColor() {
 		if (light) {
 			setColor("yellow");
 		} else {
-			setColor("black");
+			setColor("grey");
 		}
 	}
 	return (
@@ -43,16 +41,41 @@ export const Navbar = () => {
 			<Link to="/projects" className="navbar-btn p-3">
 				<BiCodeAlt color="white" size="30" />
 			</Link>
-			<GoLightBulb
-				color={color}
-				size="30"
-				onClick={() => {
-					setLight(!light);
-					handleColor();
-					//console.log("click", light);
-					actions.changeTheme(light);
-				}}
-			/>
+			<div className="d-flex flex-column py-1 mt-5 border border-secondary rounded">
+				<GoLightBulb
+					color={color}
+					size="30"
+					className="my-1"
+					onClick={() => {
+						setLight(!light);
+						handleColor();
+						//console.log("click", light);
+						actions.changeTheme(light);
+					}}
+				/>
+				<GoLightBulb
+					color={color}
+					size="30"
+					className="my-1"
+					onClick={() => {
+						setLight(!light);
+						handleColor();
+						//console.log("click", light);
+						actions.changeTheme(light);
+					}}
+				/>
+				<GoLightBulb
+					color={color}
+					size="30"
+					className="my-1"
+					onClick={() => {
+						setLight(!light);
+						handleColor();
+						//console.log("click", light);
+						actions.changeTheme(light);
+					}}
+				/>
+			</div>
 
 			<div className=" d-flex flex-column mt-auto mb-3 justify-content-center">
 				<a href="https://www.linkedin.com/in/sergiodiazl/" className="">
