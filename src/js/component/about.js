@@ -14,10 +14,10 @@ export const About = () => {
 		() => {
 			let theme = store.theme;
 			if (store.theme == "light") {
-				document.querySelector("#first").classList.toggle("light");
+				document.querySelector("#theme").classList.toggle("light");
 				//console.log("theme==light", theme);
 			} else {
-				document.querySelector("#first").classList.remove("light");
+				document.querySelector("#theme").classList.remove("light");
 				//console.log("theme==dark", theme);
 			}
 		},
@@ -25,7 +25,7 @@ export const About = () => {
 	);
 	return (
 		<>
-			<div id="first" className="section d-flex flex-column justify-content-center align-items-center">
+			<div id="theme" className="section d-flex flex-column justify-content-center align-items-center">
 				<span className="about-title ">SERGIO DIAZ LLOBERA</span>
 				<img className="profile-image mb-2" src={sergioDiaz} alt="Sergio Diaz Llobera" />
 				<p className="about-content text-justify ">

@@ -37,7 +37,7 @@ export const Navbar = () => {
 			<Link to="/" className="navbar-btn p-3">
 				<AiOutlineHome color="white" size="30" />
 			</Link>
-			<Link to="/" className="navbar-btn p-3">
+			<Link to="/about" className="navbar-btn p-3">
 				<AiOutlineUser color="white" size="30" />
 			</Link>
 			<Link to="/projects" className="navbar-btn p-3">
