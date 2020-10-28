@@ -7,7 +7,7 @@ import "../../styles/projects.scss";
 export const Projects = () => {
 	return (
 		<>
-			<div className="section d-flex flex-column justify-content-start align-items-center">
+			<div className="section dark d-flex flex-column justify-content-start align-items-center">
 				<span className="projects-title text-white">PROJECTS</span>
 				<p className="projects-content text-white">
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
