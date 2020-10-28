@@ -9,7 +9,7 @@ import "../../styles/navbar.scss";
 
 export const Navbar = () => {
 	return (
-		<div className="navbar d-flex flex-column justify-content-start p-0">
+		<div className="navbar d-flex flex-column justify-content-start p-0 border-right border-light">
 			<Link to="/" className="name p-3">
 				<div>SERGIO DIAZ LLOBERA</div>
 			</Link>
