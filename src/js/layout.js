@@ -4,12 +4,12 @@ import ScrollToTop from "./component/scrollToTop";
 
 import injectContext from "./store/appContext";
 
-import { Home } from "./views/home";
 import { About } from "./component/about";
 import { Projects } from "./component/projects";
-
 import { Navbar } from "./component/navbar";
+
 import { Footer } from "./component/footer";
+import { Home } from "./views/home";
 
 //create your first component
 const Layout = () => {

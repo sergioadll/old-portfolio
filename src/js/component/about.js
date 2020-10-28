@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "../../styles/section.scss";
+import "../../styles/about.scss";
 
 export const About = () => {
 	return (
 		<>
-			<div className="section d-flex flex-column">
-				<span className="section-title text-white">ABOUT ME</span>
-				<p className="section-content text-white">
+			<div className="section d-flex flex-column justify-content-center align-items-center">
+				<span className="about-title text-white">ABOUT ME</span>
+				<p className="about-content text-justify text-white">
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
 					dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
