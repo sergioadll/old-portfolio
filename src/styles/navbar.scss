@@ -1,11 +1,11 @@
 .navbar{
     //background: rgb(46, 61, 96);
-    background: #292929;
+    background: #202020;
     height: 100%;
     width: 7rem;
 }
 .name{
-    background: #292929;
+    //background: #292929;
     //background: rgb(46, 61, 96);
     height: 8rem;
     width: 100%;
@@ -43,4 +43,12 @@
     border-radius: 100%;
 
 }
+.function-container{
+    border: 0.1rem solid #6c757d ;
+    border-radius: 0.2rem;
 
+}
+.function-container:hover{
+    border: 0.1rem solid #ffc107;
+    cursor: pointer;
+}

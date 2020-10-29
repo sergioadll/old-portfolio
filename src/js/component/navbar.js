@@ -20,7 +20,7 @@ export const Navbar = () => {
 	//arreglar
 	function handleColor() {
 		if (light) {
-			setColor("yellow");
+			setColor("#ffc107");
 		} else {
 			setColor("grey");
 		}
@@ -28,9 +28,11 @@ export const Navbar = () => {
 	return (
 		<div className="navbar d-flex flex-column justify-content-start p-0 border-right border-secondary">
 			<Link to="/" className="name p-3">
-				<div>Sergio</div>
-				<div>Diaz</div>
-				<div>Llobera</div>
+				Sergio
+				<br />
+				Diaz
+				<br />
+				Llobera
 			</Link>
 			<Link to="/" className="navbar-btn p-3">
 				<AiOutlineHome color="white" size="30" />
@@ -41,7 +43,7 @@ export const Navbar = () => {
 			<Link to="/projects" className="navbar-btn p-3">
 				<BiCodeAlt color="white" size="30" />
 			</Link>
-			<div className="d-flex flex-column py-1 mt-5 border border-secondary rounded">
+			<div className="function-container d-flex flex-column py-1 mt-5">
 				<GoLightBulb
 					color={color}
 					size="30"

@@ -56,12 +56,12 @@ export const Home = () => {
 					</div>
 				</div>
 				<div className=" d-flex flex-column ml-auto mr-5">
-					<Button href="/projects" className="section-button my-2" variant="outline-secondary ">
-						Projectos
-					</Button>
-					<Button href="/projects" className="section-button my-2" variant="outline-secondary">
+					<Link to="/projects" className="section-button btn btn-warning my-2">
+						Proyectos
+					</Link>
+					<Link to="/about" className="section-button btn btn-outline-secondary my-2">
 						Más sobre mí
-					</Button>
+					</Link>
 				</div>
 			</div>
 		</>
